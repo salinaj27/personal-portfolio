@@ -1,28 +1,22 @@
 import { Container, Col, Row } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import colorSharp2 from "../assets/img/color-sharp2.png";
-import projImg1 from "../assets/img/project-img1.png";
+import projImg11 from "../assets/img/project-img11.png";
 import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img1.png";
 import Nav from "react-bootstrap/Nav";
 import Tab from "react-bootstrap/Tab";
 
 export const Projects = () => {
   const projects = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Github Finder App",
+      description: "User Finder",
       imgUrl: projImg2,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
+      title: "Mern Stack Proj",
+      description: "Full-stack Development",
+      imgUrl: projImg11,
     },
   ];
   return (
@@ -31,10 +25,6 @@ export const Projects = () => {
         <Row>
           <Col>
             <h2>Projects</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptates, saepe!
-            </p>
             <Tab.Container id="projects-tabs" defaultActiveKey="first">
               <Nav
                 variant="pills"
@@ -58,8 +48,7 @@ export const Projects = () => {
                     })}
                   </Row>
                 </Tab.Pane>
-                <Tab.Pane eventKey="second">Loren jsbjb</Tab.Pane>
-                <Tab.Pane eventKey="third">Loren jsbjb</Tab.Pane>
+                <Tab.Pane eventKey="second">More on the way!</Tab.Pane>
               </Tab.Content>
             </Tab.Container>
           </Col>

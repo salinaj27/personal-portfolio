@@ -33,12 +33,7 @@ export const Skills = () => {
           <Col>
             <div className="skill-bx">
               <h2>Skills</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-                cum, illo expedita minima a porro eaque et earum iure in nam
-                explicabo atque eveniet inventore dolorum! Blanditiis in aperiam
-                impedit!
-              </p>
+              <br />
               <Carousel
                 responsive={responsive}
                 infinite={true}
@@ -46,19 +41,23 @@ export const Skills = () => {
               >
                 <div className="item">
                   <img src={meter1} alt="" />
-                  <h5>Web Development</h5>
+                  <h5>React</h5>
                 </div>
                 <div className="item">
                   <img src={meter2} alt="" />
-                  <h5>Web Development</h5>
+                  <h5>Redux</h5>
                 </div>
                 <div className="item">
                   <img src={meter3} alt="" />
-                  <h5>Web Development</h5>
+                  <h5>JavaScript</h5>
                 </div>
                 <div className="item">
                   <img src={meter1} alt="" />
-                  <h5>Web Development</h5>
+                  <h5>PostgreSQL</h5>
+                </div>
+                <div className="item">
+                  <img src={meter1} alt="" />
+                  <h5>HTML & CSS</h5>
                 </div>
               </Carousel>
             </div>

@@ -48,6 +48,14 @@ export const Banner = () => {
     }
   };
 
+  const handleClick = (e) => {
+    e.preventDefault();
+    window.open(
+      "https://www.linkedin.com/in/salina-tadros-aa37a8138/",
+      "_blank"
+    );
+  };
+
   return (
     <section className="banner" id="home">
       <Container>
@@ -55,20 +63,23 @@ export const Banner = () => {
           <Col xs={12} md={6} xl={7}>
             <span className="tagline">Welcome to my Portfolio</span>
             <h1>
-              {`Hi I'm Salina,  `}
+              {`Hello I'm Salina,  `}
               <span className="wrap">{text}</span>
             </h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam hic
-              vel, ipsum unde architecto ipsam voluptatibus mollitia! Vero,
-              suscipit possimus?
+              Proficient in the MERN stack and I'm currently learning Data
+              Structures and Algorithms. <br /> I enjoy learning and
+              implementing new tech. When I'm not coding, I'm either at the gym
+              or Jogging outside. <br />
+              My background includes studying and graduating from Fullstack
+              Academy. <br />
             </p>
-            <button onClick={() => console.log("connect")}>
+            <button onClick={handleClick}>
               Lets Connect <ArrowRightCircle size={25}></ArrowRightCircle>
             </button>
           </Col>
           <Col xs={12} md={6} xl={5}>
-            <img src={headerImg} alt="Headder Img" />
+            <img src={headerImg} alt="Header Img" />
           </Col>
         </Row>
       </Container>
